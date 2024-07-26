@@ -1,0 +1,668 @@
+/* 
+    Dark Jungle Green : #1A2421
+    Charleston green : #232B2B
+    Asphalt: #0C0404
+    Licorice : #1A1110
+
+*/
+
+:root{
+
+    --background: #000000;
+    --gold: #8c6607;
+  
+    --headings: #cbcbcb;
+  
+  
+    --neonblue: #008e87;
+    --neonpink: #b30d55;
+    --neonyellow: #a19c3d;
+  }
+
+body{
+    background-color:var(--background);
+}
+
+
+/*Footer*/
+footer{
+    background-color: #010808;
+}
+#footer-title{
+    font-family: "Style Script";
+    font-weight: 400;
+    color: var(--gold);
+}
+
+#footer-content > div > div > a{
+    font-family: "Poppins", cursive;
+    font-weight: 400;
+    color: rgb(161, 161, 161);
+    padding: 4px;
+    margin: 2px;
+}
+#footer-content > div > div > a:hover{
+    transform: scale(2);
+    color: white;
+}
+#footer-content > div > div > h2{
+    color: var(--gold);
+    font-weight: 700;
+}
+
+
+/*Lower Footer Section */
+#footer_seprator{
+    background: linear-gradient(#200589,#E43681);
+}
+#footer-social-golden{
+    color: var(--gold);
+    font-weight: 700;
+}
+
+#footer_socials{
+    font-family: "Poppins", cursive;
+    font-weight: 700;
+}
+#social_img{
+    border: solid 2px;
+    border-top: #200589 solid 3px;
+    border-left: #E43681 solid 3px;
+    border-right: #E43681 solid 3px;
+
+}
+#socials{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+#socials:hover{
+    opacity: 1.0;
+}
+
+#socials_hover :hover{
+    transform: scale(1.05);
+    rotate: 1.5deg;
+    transition: all 0.2s ease-in-out;
+    opacity: 1.0;
+    transition: 0.3s;
+}
+
+
+/*Github*/
+#repo{
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+#button1{
+    font-family: "Poppins";
+    border:none;
+    color: rgb(215, 215, 215);
+    background-color: #FC5185;
+    z-index: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+#button1::after{
+    content:'';
+    background-color: #F5F5F5;
+    height: 100%;
+    width: 0px;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 200ms ease-in-out;
+
+}
+#button1:hover::after{
+    width: 100%;
+}
+#button1:hover{
+    color: black;
+
+}
+  .card {
+    border-radius: 30px;
+    margin-left: 50px;
+    padding-left: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 0px;
+    padding-right: 50px;
+    perspective: 1000px;
+}
+
+.card__inner {
+    font-family: "Poppins";
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+    
+    background: linear-gradient(to right, #0F2027,#203A43,#2C5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--front h2 {
+  color: #FFF;
+  font-size: 32px;
+}
+
+.card__face--back {
+
+  background-color:#0c0f0f;
+  transform: rotateY(180deg);
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+}
+#bug{
+    font-family: "Titan One";
+    font-size: 2em;
+}
+#card{
+    transition: all 200ms ease-in-out;
+}
+#card:hover{
+    transform: scale(1.04);
+    transition: all 200ms ease-in-out;
+}
+
+
+
+.card2 {
+    border-radius: 20px;
+    
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 70px;
+    padding-right: 0px;
+    width: 2/3;
+    perspective: 1000px;
+}
+
+.card__inner2 {
+font-family: "Poppins";
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__inner2.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+.card__face2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front2 {
+    
+    background: linear-gradient(to right, #536976, #292E49);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--front2 h2 {
+  color: #FFF;
+  font-size: 32px;
+}
+
+.card__face--back2 {
+
+  background-color:#0c0f0f;
+  transform: rotateY(180deg);
+}
+
+.card__content2 {
+  width: 100%;
+  height: 100%;
+}
+
+#card2{
+    
+    transition: all 200ms ease-in-out;
+}
+#card2:hover{
+    transform: scale(1.04);
+    transition: all 200ms ease-in-out;
+}
+
+
+/*Navbar*/
+
+/*Navbar Button*/
+
+
+
+.toggle-button{
+  width: 90px;
+  height: auto;
+  position: fixed;
+  z-index: 200;
+  margin-left: 92%;
+  margin-top: 20px;
+  transition: all ease-in 0.2s;
+  opacity: 1;
+  z-index: 200;
+  height: 90px;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5) ;
+}
+.toggle-button.is-active{
+  display: none;
+  visibility: hidden;
+}
+
+
+
+
+
+  .navbar{
+    background-color: #030104;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    animation-name: circle;
+    animation-duration: 0.1s;
+
+  }
+  .navbar.is-active{
+    transition: all 500ms ease-in-out;
+    display:block;
+    visibility: visible;
+    overflow: visible;
+    transition: all 300ms ease-in-out;
+  }
+
+  .navbar a{
+    color: rgb(191, 191, 191);
+    font-family: "Cinzel Decorative";
+    font-weight: 500;
+    margin: 20px;
+    z-index: 10;
+    animation-name: content;
+    animation-duration: 0.1s;
+
+  }
+  .buttons_hover:hover{
+    color: white;
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: all 300ms ease-in-out;
+    font-weight: 500;
+  }
+
+  .buttons_nav{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  /*designing*/
+  .white-walker{
+    width: auto;
+    height: 100vh;
+    right: 0;
+    position: absolute;
+    opacity: 0.85;
+    animation-name: walker;
+    animation-duration: 0.5s;
+
+  }
+  .circle{
+    opacity: 0.35;
+    padding: 20px;
+    position: absolute;
+    height: auto;
+    width: 400px;
+    margin-left: 36.6%;
+    margin-top: 10%;
+    transition: all 500ms ease-in-out;
+    border: #70623f solid 4px;
+    border-radius: 250px;
+    animation-name: circle;
+    animation-duration: 0.5s;
+
+  }
+  .circle:hover{
+    opacity: 0.4;
+    transition: all 500ms ease-in-out;
+    border: solid 4px #a0770d;
+  }
+  .icon-border{
+    border: 2px var(--gold) solid;
+  }
+  .nav_cross{
+    position: absolute;
+    width: auto;
+    height: 50px;
+    opacity: 0.6;
+    margin-left: 48.2%;
+    margin-top: 82vh;
+    border: 2px solid #70623f;
+    border-radius: 100px;
+    animation-name: exit;
+    animation-duration: 0.1s;
+
+
+  }
+  .nav_cross:hover{
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+    border: 2px solid #a00c0a;
+    height: 52px;
+    cursor: pointer;
+
+  }
+  .exit{
+    color: rgb(131, 130, 130);
+    font-family: "Cinzel Decorative";
+    margin-left: 48.3%;
+    position: absolute;
+    margin-top: 90vh;
+    animation-name: content;
+    animation-duration: 0.1s;
+
+  }
+  @keyframes circle {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 0.35;
+    }
+  }
+
+  @keyframes content {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  @keyframes exit {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 0.6;
+    }
+  }
+  @keyframes walker {
+    from{
+      opacity: 0.2;
+    }
+    to{
+      opacity: 0.85;
+    }
+  }
+
+
+
+  /*WEBD*/
+
+  #Webd{
+    height: 300vh;
+  }
+  #webd-left{
+    background-color: #030104;
+    z-index: 3;
+    border-right: 3px solid #a0760db0;
+
+  }
+  #web-static{
+    padding-top: 35%;
+    padding-bottom: 35%;
+    color: rgb(203, 203, 203);
+    font-family: "Cinzel Decorative";
+    text-align: center;
+    opacity: 0.5;
+  }
+  .web-underline{
+    position: relative;
+    width: auto;
+    height: 150px;
+    margin: -20px auto 0 auto;
+    opacity: 0.7;
+  }
+
+
+
+  #frame{
+    color: rgb(220, 220, 220);
+    font-family: "Poppins";
+    text-align: center;
+    padding: 1em;
+    font-size: 2.5em;
+  }
+  #webd-right{
+      background-color:#000000; 
+    /*background-color: #180024;*/
+  }
+
+  #static-end{
+    margin-top: 260vh;
+  }
+  #framework{
+      color: rgb(149, 149, 149);
+  }
+  .cards1{
+    border: 3px solid #008e87;
+  }
+  .cards1 h2{
+    color: #08d3c9;
+    font-family: "Poppins";
+  }
+  .cards2 h2{
+    color: #b30d55;
+    font-family: "Poppins";
+  }
+  .cards2{
+    border: 3px solid #b30d55;
+  }
+  .cards3{
+    border: 3px solid #a19c3d;
+  }
+  .cards3 h2{
+    color: #cac342;
+    font-family: "Poppins";
+  }
+
+
+
+
+  .framework-cards{
+      border-radius: 25px;
+      transition: all 300ms ease-in-out;
+  }
+
+  /*Framework hower*/
+  .framework-cards:hover{
+    color: rgb(203, 203, 203);
+    border: #ffffff 3px solid;
+    transition: all 300ms ease-in-out;
+    transform: scale(1.05);
+  }
+  .framework-images{
+    border-radius: 50px;
+  }
+
+  .link-copied{
+    display: block;
+  }
+
+  #tailwind-link{
+    background-color: #08d3c9;
+    border-radius: 10px;
+  }
+  #bootstrap-css-link{
+    background-color: #b30d55;
+    border-radius: 10px;
+  }
+  #bootstrap-js-link{
+    background-color: #b30d55;
+    border-radius: 10px;
+  }
+  #pico-link{
+    background-color: #cac342;
+    border-radius: 10px;
+  }
+
+
+    /*Kings Landing*/
+    #Landing{
+        height: 110vh;
+      }
+      #main{
+        display: flex;
+        justify-content: center;
+        
+      }
+      #throne{
+        top: 55vh;
+        position: absolute;
+        z-index: 25;
+        width: 85vh;
+        opacity: 0.8;
+      }
+      
+    
+      #harrenhal{
+        position: absolute;
+        z-index: 24;
+        opacity: 0.6;
+      }
+    
+      #heading1{
+        position: absolute;
+        z-index: 50;
+        color: rgb(175, 174, 174);
+        font-family: "Poppins";
+        font-weight: 600;
+        margin-top: 50px;
+        font-size: 1.5em;
+      }
+      #heading2{
+        color: rgb(217, 215, 215);
+        font-family: "Cinzel Decorative";
+      }
+      #heading3{
+        color: #8c6607;
+        font-weight: 500;
+        font-size: 6.5rem;
+        font-family: "Cinzel Decorative";
+      }
+
+@media only screen and (max-width: 768px) {
+    /* Footer */
+    
+    #socials{
+        display: none;
+    }
+    #footer-content{
+        display: block;
+    }
+    #footer-res{
+        display: grid;
+        grid-template-rows: 250px 250px;
+        grid-template-columns: auto auto;
+        row-gap: -20px;
+        
+    }
+    .grid-md{
+        color: white;
+    }
+    #footer-title{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Form Section */
+    .card__face {
+        width: 300px;
+      height: 60px;
+      font-size: 20px;
+      font-weight: 100;
+      background: linear-gradient(to right, #0F2027,#203A43,#2C5364);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card__face2 {
+        height: 56px;
+        width: 300px;
+        font-size: 16px;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .baratheon{
+        display: none;
+      }
+      .lannister{
+        display: none;
+      }
+      .card__face--back{
+        height: 480px;
+        width: 300px;
+        overflow: hidden;
+      }
+      .card__face--back > p, img {
+        display: none;
+      }
+      #button1{
+        width: 100px;
+        margin-top: 70px;
+        margin-left: -175px;
+        position: absolute;
+      }
+}
+      

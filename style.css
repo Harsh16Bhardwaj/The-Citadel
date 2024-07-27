@@ -1,4 +1,4 @@
-/* 
+  /* 
     Dark Jungle Green : #1A2421
     Charleston green : #232B2B
     Asphalt: #0C0404
@@ -273,7 +273,12 @@ font-family: "Poppins";
 
 /*Navbar Button*/
 
-
+.icon-border:hover{
+  opacity: 1;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  border: var(--neonblue) 2px solid;
+}
 
 .toggle-button{
   width: 90px;
@@ -376,6 +381,8 @@ font-family: "Poppins";
   }
   .icon-border{
     border: 2px var(--gold) solid;
+    
+  transition: all 0.3s ease-in-out;
   }
   .nav_cross{
     position: absolute;

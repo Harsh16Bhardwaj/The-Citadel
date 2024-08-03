@@ -104,3 +104,25 @@ document.getElementById("pico-link").addEventListener("click", function () {
     }
   );
 });
+
+
+
+
+/*Landing PAge*/
+const dragon1 = document.getElementById('#dragon1');
+const dragon2 = document.getElementById('#dragon2');
+const text1 = document.getElementsByClassName('.one');
+const text2 = document.getElementsByClassName('.two');
+const background = document.getElementById('#harrenhal');
+const throne = document.getElementById('#throne');
+
+document.addEventListener('scroll', function(){
+  let value = window.scrollY;
+  dragon1.style.marginTop = value * 2.1 + 'px';
+  dragon2.style.marginLeft = value * 0.8 + 'px';
+  text2.style.marginTop = value * 1.5 + 'px';
+  text1.style.marginTop = value * 1.1 + 'px';
+  throne.style.marginTop = value * 1.3 +'px';
+
+
+})

@@ -9,7 +9,7 @@
 :root{
 /* 
     --background: #000000; */
-    --background: #060606;
+    --background: #030104;
 
     --gold: #8c6607;
   
@@ -377,9 +377,9 @@ font-family: "Poppins";
 
   }
   .circle:hover{
-    opacity: 0.4;
+    opacity: 0.5;
     transition: all 500ms ease-in-out;
-    border: solid 4px #a0770d;
+    border: solid 4px var(--gold)
   }
   .icon-border{
     border: 2px var(--gold) solid;
@@ -492,7 +492,7 @@ font-family: "Poppins";
     font-size: 2.5em;
   }
   #webd-right{
-      background-color:#000000; 
+      background-color:#030104; 
     /*background-color: #180024;*/
   }
 
@@ -567,48 +567,65 @@ font-family: "Poppins";
 
     /*Kings Landing*/
     #Landing{
-        height: 110vh;
+        height: 140vh;
       }
       #main{
-        display: flex;
-        justify-content: center;
-        
+        display: grid;
+        grid-template-area: "stack" ;
       }
+
       #throne{
-        top: 55vh;
-        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vh;
         z-index: 25;
-        width: 85vh;
+        width: 70vh;
         opacity: 0.8;
+        border-radius: 500px;
       }
-      
+      .maest{
+        font-size: 4em;
+      }
     
       #harrenhal{
         position: absolute;
         z-index: 24;
-        opacity: 0.6;
+        opacity: 0.5;
       }
     
       #heading1{
-        position: absolute;
+        text-align: center;
         z-index: 50;
         color: rgb(175, 174, 174);
         font-family: "Poppins";
-        font-weight: 600;
-        margin-top: 50px;
-        font-size: 1.5em;
+        font-weight: 400;
+        margin-top: 30px;
+        font-size: 1.1em;
       }
       #heading2{
+        font-size: 2.7em;
         color: rgb(217, 215, 215);
-        font-family: "Cinzel Decorative";
+        font-family: "Poppins";
+        margin-top: 10px;
+        color: var(--gold);
       }
       #heading3{
-        color: #8c6607;
-        font-weight: 500;
-        font-size: 6.5rem;
-        font-family: "Cinzel Decorative";
+        color: rgb(213, 211, 211);
+        margin-left: 10px;
+        font-size: 7rem;
+        font-family: "Arial";
       }
-
+      .heading3{
+        color: rgb(169, 167, 167);
+        z-index: 24;
+        font-family: "Poppins";
+      }
+      #headathe{
+        font-size: 1.5em;
+        font-weight: 500;
+        margin-top: -30px;
+        
+      }
 @media only screen and (max-width: 768px) {
     /* Footer */
     
